@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM INGE</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/css/index.css') }}">    
+</head>
+<body>
+    <div class="main_div">
+        <div class="title"> 
+        <h3>GET YOUR FANTICY IMAGE</h3>
+        </div>
+        <div class="display_box">
+            <img src="{{data}}" alt="random_image" class="image_rand" width="500px" height = "300px">
+            <img src="{{data2}}" alt="random_image" class="image_rand" width="500px" height = "300px">
+        </div>
+       <div class="button_div">
+            <form meathod="POST" action="/rand_image">
+                <input type="submit" name="get_inage" value="GENERATE" class="glassy-button">
+            </form>
+       </div>
+    </div>
+</body>
+</html>
+ 
